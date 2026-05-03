@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  CI Quality Checks (Lint + Test + Coverage):
+  ci_quality_checks:
     runs-on: ubuntu-latest
 
     steps:
