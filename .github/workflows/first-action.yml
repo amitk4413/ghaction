@@ -3,6 +3,8 @@ name: GH200 Python CI Pipeline
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
+    branches: [ "main" ]
 
 jobs:
   ci_quality_checks:
