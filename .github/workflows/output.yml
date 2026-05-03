@@ -1,0 +1,14 @@
+name: Output with help of Github context
+
+on:
+  workflow_dispatch:
+    branches: ["main"]
+
+jobs:
+  github_context_info:
+    name: Display info using github context
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Output github context
+        run: echo "${{ toJSON(github) }}"
